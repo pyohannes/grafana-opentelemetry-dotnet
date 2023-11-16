@@ -17,6 +17,8 @@ OTEL_DOTNET_AUTO_HOME=$HOME/.otel-dotnet-auto
   echo done.
 
   echo -n Downloading Grafana-specific customizations to ${OTEL_DOTNET_AUTO_HOME} ...
+  curl -sSfL https://raw.githubusercontent.com/pyohannes/grafana-opentelemetry-dotnet/auto-instrumentation/scripts/grafana-instrument.sh -o $OTEL_DOTNET_AUTO_HOME/grafana-instrument.sh
+  chmod +x $OTEL_DOTNET_AUTO_HOME/grafana-instrument.sh
   echo done.
 
   echo -n Removing temporary files ...
