@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.7.0-beta.4
+## 0.7.0-beta.4a
 
 ### Bug fixes
 
